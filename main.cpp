@@ -1,5 +1,5 @@
-#include "alloc/alloc.h"
-#include "alloc/linked_list.h"
+#include "alloc.h"
+#include "linked_list.h"
 
 
 int main(int, char *[]) {
