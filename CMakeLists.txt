@@ -8,7 +8,7 @@ endif()
 
 configure_file(version.h.in version.h)
 
-add_executable(allocator main.cpp alloc.cpp alloc.h linked_list.h)
+add_executable(allocator main.cpp alloc/alloc.cpp alloc/alloc.h alloc/linked_list.h)
 
 set_target_properties(allocator PROPERTIES
         CXX_STANDARD 14
