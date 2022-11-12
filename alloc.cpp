@@ -6,9 +6,11 @@ int factorial(int value) {
 }
 
 
-void printMap(std::map<int, int, std::less<int>, logging_allocator<std::pair<const int, int>, 10>>& dict) {
-  // Iterate through the dictionary and print pairs <key, value>
-  for(const auto& node: dict) {
+void printMap(std::map<int, int, std::less<int>, logging_allocator<std::pair<const int, int>, 10>>& dict) 
+{
+  
+  for(const auto& node: dict)
+  {
     std::cout << node.first << " " << node.second << std::endl;
   }
 }
