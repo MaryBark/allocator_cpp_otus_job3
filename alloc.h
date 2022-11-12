@@ -69,12 +69,8 @@ private:
   size_t  buff_ct  = 0;
 };
 
-
-// @method Calculates factorial for given integer value
 int factorial(int value);
 
-
-// @method Print <key, value> pairs of map
 void printMap(std::map<int, int, std::less<int>, logging_allocator<std::pair<const int, int>, 10>>& dict);
 
 #endif //ALLOCATOR_LIB_H
