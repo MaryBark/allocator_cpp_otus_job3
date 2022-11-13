@@ -3,22 +3,22 @@ cmake_minimum_required(VERSION 3.2)
 #project(allocator VERSION ${PROJECT_VESRION})
 
 if($ENV{TRAVIS_BUILD_NUMBER})
-    project(allocator VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+    project(allocator1 VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 else()
-    project(allocator VERSION 0.0.1)
+    project(allocator1 VERSION 0.0.1)
 endif()
 
 configure_file(version.h.in version.h)
 
-add_executable(allocator main.cpp alloc.cpp alloc.h linked_list.h)
+add_executable(allocator1 main.cpp alloc.cpp alloc.h linked_list.h)
 
-set_target_properties(allocator PROPERTIES
+set_target_properties(allocator1 PROPERTIES
         CXX_STANDARD 14
         CXX_STANDARD_REQUIRED ON
         COMPILE_OPTIONS "-Wpedantic;-Wall;-Wextra"
         )
 
-install(TARGETS allocator RUNTIME DESTINATION bin)
+install(TARGETS allocator1 RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
